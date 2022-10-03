@@ -1,20 +1,20 @@
-#include "pudge.h"
+#include "kunka.h"
 
-pudge::pudge()
+kunka::kunka()
 {
-    this->health=150;
-        this->armor=12;
-        this->damage=15;
-        strcpy(this->name, " pudge ");
+    this->health=100;
+        this->armor=7;
+        this->damage=24;
+        strcpy(this->name, " kunka ");
 }
-void pudge::MeatHoock(unit &enemy){
+void kunka::Torrent(unit &enemy){
     int uron = this->damage * 1.8;
     enemy.health -= uron;
-    cout << this->name << " hukaet " << enemy.name
+    cout << this->name << " kinul torrent " << enemy.name
          <<" i nanosit " << this->damage << " urona "
          << endl;
 
 }
-void pudge::spell_1(unit &enemy) {
-    this -> MeatHoock(enemy);
+void kunka::spell_1(unit &enemy) {
+    this -> Torrent(enemy);
 }
