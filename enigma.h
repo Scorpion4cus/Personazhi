@@ -6,7 +6,7 @@ class Enigma: public unit
 {
 public:
     Enigma();
-    void powershot(unit &enemy);
+    void blackhole(unit &enemy);
 };
 
 #endif // ENIGMA_H
