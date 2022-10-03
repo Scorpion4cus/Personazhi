@@ -1,13 +1,13 @@
-#ifndef PUDGE_H
-#define PUDGE_H
+#ifndef KUNKA_H
+#define KUNKA_H
 #include"unit.h"
 
-class pudge: public unit
+class kunka: public unit
 {
 public:
-    pudge();
-    void MeatHoock (unit &enemy);
+    kunka();
+    void Torrent (unit &enemy);
      void spell_1 (unit &enemy);
 };
 
-#endif // PUDGE_H
+#endif // KUNKA_H
