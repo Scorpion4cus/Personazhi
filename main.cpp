@@ -1,11 +1,11 @@
 #include <QCoreApplication>
 #include "unit.h"
-#include "pudge.h"
+#include "kunka.h"
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 unit *u1 = new unit();
-pudge *u2 = new pudge();
+pudge *u2 = new kunka();
 
 for (int i=0; i<10; i++)
 {
